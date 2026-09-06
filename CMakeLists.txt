@@ -18,13 +18,15 @@ function(add_pattern name)
       ${CMAKE_SOURCE_DIR}/include/${name}
     )
 
-    target_compile_options(${name} -Wall)
+    target_compile_options(${name} PRIVATE -Wall)
 
     message(STATUS "Adding pattern: ${name}")
   else()
     message(STATUS "Skipping pattern: ${name} (no main.cpp)")
   endif()
 endfunction()
+
+message("\n")
 
 add_pattern(observer)
 add_pattern(decorator)
