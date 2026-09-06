@@ -8,6 +8,8 @@ project(
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Adds given pattern
+# skips if pattern doesn't have a main.cpp file
 function(add_pattern name)
   set(main_file "${CMAKE_SOURCE_DIR}/src/${name}/main.cpp")   
 
