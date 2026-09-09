@@ -1,6 +1,8 @@
 # Help tools that honor '.gitignore' (redundant for Git itself).
 /.git
 
+/__cmake_systeminformation/
+
 /CMakeUserPresets.json
 
 # Common build directories
